@@ -1,4 +1,5 @@
 const validateForm = () => {
+  // Grabbing all the needed elements
   const username = document.forms.feedbackForm.username.value
   const title = document.forms.feedbackForm.imageTitle.value
   const comment = document.forms.feedbackForm.comment.value
@@ -8,6 +9,7 @@ const validateForm = () => {
   const submitBtn = document.getElementById('submitBtn')
   let isValid = true
 
+  // Validating the username
   if (username.length < 6) {
     usernameError.innerHTML = 'Username must be at least 6 characters'
     isValid = false
@@ -15,6 +17,7 @@ const validateForm = () => {
     usernameError.innerHTML = ''
   }
 
+  //  Validating the image title
   if (title === '') {
     titleError.innerHTML = 'Image title cannot be empty'
     isValid = false
@@ -22,6 +25,7 @@ const validateForm = () => {
     titleError.innerHTML = ''
   }
 
+  // Validating the comment text area
   if (comment === '') {
     commentError.innerHTML = 'Comment cannot be empty'
     isValid = false
@@ -34,6 +38,7 @@ const validateForm = () => {
   return isValid
 }
 
+// Preventing the form from submitting before our javascript validation loads
 window.onload = () => {
   const submitBtn = document.getElementById('submitBtn')
   submitBtn.addEventListener('click', (event) => {
