@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap');
 
 @import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+/* @import "https://unpkg.com/open-props/normalize.min.css"; */
 
 /* Custom properties */
 :root {
@@ -18,6 +18,7 @@
   --spacer: var(--size-3);
 }
 
+/* bpdy style */
 body {
   font-family: var(--sm-pixel-font);
   color: #333;
@@ -122,4 +123,11 @@ p {
 .bigFont {
   font-family: var(--lg-pixel-font);
   font-size: 1.8em;
+}
+
+/* Feedback form */
+span {
+  color: rgb(128, 0, 0);
+  font-weight: bold;
+  font-weight: 1.5rem;
 }

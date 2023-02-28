@@ -64,9 +64,43 @@
 
     <!-- Content -->
 
+    <!-- Feedback title -->
     <div class="container h1 text-center my-5 title">Are You Not Entertained?</div>
    
+    <!-- Feedback form -->
+    <div class="container w-75">
+      
+      <form method="post" name="feedbackForm">
 
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="username" placeholder="username">
+          <label for="username">Username</label>
+        </div>
+
+        <span id="userNameError"></span>
+  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="imageTitle" placeholder="image title">
+          <label for="imageTitle">Image Title</label>
+        </div>
+  
+        <span id="imageTitleError"></span>
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px"></textarea>
+          <label for="comment">Comment</label>
+        </div>
+
+        <span id="commentError"></span>
+
+        <div class="container text-center my-4">
+          <buton type="submit" class="btn btn-dark w-50" id="submitBtn" value="Submit" disabled> Submit </buton>
+        </div>
+      
+
+      </form>
+
+    </div>
     <!-- Footer -->
     <div class="bg-light py-4 text-center mt-5 lead bigFont">
       &copy; 2023 PokéGallery
@@ -78,6 +112,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
       <!-- External JS file link  -->
-      <script  src="js/main.js"></script>
+      <script  type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
