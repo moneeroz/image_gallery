@@ -131,3 +131,23 @@ span {
   font-weight: bold;
   font-weight: 1.5rem;
 }
+
+/* Media Queries */
+
+/* Medium screens */
+@media all and (max-width: 800px) {  
+  /* Catalog style */
+  /* Show only 2 pokemons */
+  .media-scroller {
+    grid-auto-columns: 40%;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {  
+  /* Catalog style */
+  /* Show only 1 pokemon */
+  .media-scroller {
+    grid-auto-columns: 80%;
+  }
+}
