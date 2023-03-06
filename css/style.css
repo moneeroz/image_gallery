@@ -150,4 +150,8 @@ span {
   .media-scroller {
     grid-auto-columns: 80%;
   }
+
+  .title {
+    font-size: 2em;
+  }
 }
